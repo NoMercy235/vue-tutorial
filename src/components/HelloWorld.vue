@@ -35,6 +35,12 @@
                 <a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a>
             </li>
         </ul>
+        <h2>Applications</h2>
+        <ul>
+            <li>
+                <router-link to="/notemaster">Go to Notemaster</router-link>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -43,9 +49,9 @@ export default {
     name: 'HelloWorld',
     data () {
         return {
-            msg: 'Welcome to Your Vue.js App'
+            msg: 'Welcome to Your Vue.js App',
         };
-    }
+    },
 };
 </script>
 

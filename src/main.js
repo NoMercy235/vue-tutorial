@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './App';
-import Vuex from 'vuex'
+import Vuex from 'vuex';
 import router from './router';
 
 Vue.config.productionTip = false;
@@ -13,6 +13,6 @@ Vue.use(Vuex);
 new Vue({
     el: '#app',
     router,
-    components: { App },
-    template: '<App/>'
+    components: { App, },
+    template: '<App/>',
 });

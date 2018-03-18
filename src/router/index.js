@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
+import Notemaster from '@/components/Notemaster';
 
 Vue.use(Router);
 
@@ -9,7 +10,12 @@ export default new Router({
         {
             path: '/',
             name: 'HelloWorld',
-            component: HelloWorld
-        }
-    ]
+            component: HelloWorld,
+        },
+        {
+            path: '/notemaster',
+            name: 'Notemaster',
+            component: Notemaster,
+        },
+    ],
 });
