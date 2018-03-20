@@ -38,7 +38,10 @@
         <h2>Applications</h2>
         <ul>
             <li>
-                <router-link to="/notemaster">Go to Notemaster</router-link>
+                <router-link to="/notemaster">Notemaster</router-link>
+            </li>
+            <li>
+                <router-link to="/starbase">Starbase</router-link>
             </li>
         </ul>
     </div>
