@@ -43,6 +43,9 @@
             <li>
                 <router-link to="/starbase">Starbase</router-link>
             </li>
+            <li>
+                <router-link to="/jokester">Jokester</router-link>
+            </li>
         </ul>
     </div>
 </template>
