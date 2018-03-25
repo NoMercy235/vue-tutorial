@@ -1,6 +1,10 @@
 <template>
     <div id="app">
-        <img src="./assets/logo.png">
+        <b-nav>
+            <b-nav-item><router-link to="/notemaster">Notemaster</router-link></b-nav-item>
+            <b-nav-item><router-link to="/starbase">Starbase</router-link></b-nav-item>
+            <b-nav-item><router-link to="/jokester">Jokester</router-link></b-nav-item>
+        </b-nav>
         <router-view/>
     </div>
 </template>
