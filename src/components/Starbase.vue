@@ -1,6 +1,7 @@
 <template>
    <div class="sb-body">
        <h3>{{ title }}</h3>
+       <button class="btn btn-primary" @click="fetchCharacter">Get character</button>
    </div>
 </template>
 
@@ -11,6 +12,8 @@ export default {
         return {
             title: 'Generate Your Team',
         };
+    },
+    methods: {
     },
 };
 </script>
