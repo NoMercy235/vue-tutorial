@@ -11,4 +11,8 @@ export const mutations = {
         const index = state.jokes.findIndex((joke) => joke.id === id);
         state.jokes.splice(index, 1);
     },
+
+    [TYPES.SIGN_IN] (state, payload) {
+        state.user = payload;
+    },
 };

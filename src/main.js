@@ -13,6 +13,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 firebaseApp.auth().onAuthStateChanged(user => {
     if (user) {
+        store.dispatch('signIn', user);
         router.push('/turnout');
     } else {
         router.push('/turnout/signin');

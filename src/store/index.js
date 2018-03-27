@@ -7,10 +7,12 @@ Vue.use(Vuex);
 
 const state = {
     jokes: [],
+    user: {},
 };
-
-export default new Vuex.Store({
+const store = new Vuex.Store({
     state,
     mutations,
     actions,
 });
+
+export default store;
