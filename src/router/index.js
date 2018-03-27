@@ -1,14 +1,17 @@
 import Vue from 'vue';
-import Router from 'vue-router';
+import VueRouter from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
 import Notemaster from '@/components/Notemaster';
 import Starbase from '@/components/Starbase';
 import Jokester from '@/components/Jokester';
 import Turnout from '@/components/turnout/Turnout';
+import Signin from '@/components/turnout/Signin';
+import Dashboard from '@/components/turnout/Dashboard';
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
+export default new VueRouter({
+    mode: 'history',
     routes: [
         {
             path: '/',
@@ -32,8 +35,17 @@ export default new Router({
         },
         {
             path: '/turnout',
-            name: 'Turnout',
             component: Turnout,
+            children: [
+                {
+                    path: '',
+                    component: Dashboard,
+                },
+                {
+                    path: 'signin',
+                    component: Signin,
+                },
+            ],
         },
     ],
 });

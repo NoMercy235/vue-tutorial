@@ -1,10 +1,10 @@
 <template>
-    <router-view/>
+    <div>signin</div>
 </template>
 
 <script>
 export default {
-    name: 'Turnout',
+    name: 'Signin',
     data () {
         return {
         };
