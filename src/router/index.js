@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld';
 import Notemaster from '@/components/Notemaster';
 import Starbase from '@/components/Starbase';
 import Jokester from '@/components/Jokester';
+import Turnout from '@/components/turnout/Turnout';
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
             path: '/jokester',
             name: 'Jokester',
             component: Jokester,
+        },
+        {
+            path: '/turnout',
+            name: 'Turnout',
+            component: Turnout,
         },
     ],
 });
