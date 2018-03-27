@@ -15,4 +15,7 @@ export const mutations = {
     [TYPES.SIGN_IN] (state, payload) {
         state.user = payload;
     },
+    [TYPES.SIGN_OUT] (state) {
+        state.user = {};
+    },
 };

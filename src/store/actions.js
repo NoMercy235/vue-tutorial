@@ -19,3 +19,7 @@ export const removeJoke = ({ commit, }, id) => {
 export const signIn = ({ commit, }, user) => {
     commit(TYPES.SIGN_IN, user);
 };
+
+export const signOut = ({ commit, }) => {
+    commit(TYPES.SIGN_IN);
+};
