@@ -5,10 +5,19 @@ import App from './App';
 import Vuex from 'vuex';
 import router from './router';
 import store from './store';
+import {firebaseApp, } from './firebase';
 
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+firebaseApp.auth().onAuthStateChanged(user => {
+    if (user) {
+        router.push('/turnout');
+    } else {
+        router.push('/turnout/signin');
+    }
+});
 
 Vue.config.productionTip = false;
 
